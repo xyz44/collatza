@@ -38,4 +38,5 @@ class Hailstone implements Iterable<Integer> {
     }
 
     public List<Integer> getElements() {return listElements;}
+    public void clearListElements() {listElements.clear();}
 }
