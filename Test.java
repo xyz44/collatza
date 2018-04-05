@@ -7,9 +7,5 @@ class Test {
             ++count;
         }
         System.out.println(ini + " " + count + " " + maxel);
-        System.out.println("===========================");
-
-        for(Integer elem : hailstone.getElements())
-            System.out.println(elem);
     }
 }

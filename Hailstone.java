@@ -1,16 +1,12 @@
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 
 class Hailstone implements Iterable<Integer> {
     private Integer Element;
     private boolean isLastElement;
-    private List<Integer> listElements;
 
     Hailstone(Integer a0) {
         Element = a0;
         isLastElement = false;
-        listElements = new LinkedList<>();
     }
 
     public Iterator<Integer> iterator() {
@@ -31,12 +27,8 @@ class Hailstone implements Iterable<Integer> {
                         isLastElement = true;
                     Element = 3 * Element + 1;
                 }
-                listElements.add(tmp);
                 return tmp;
             }
         };
     }
-
-    public List<Integer> getElements() {return listElements;}
-    public void clearListElements() {listElements.clear();}
 }
