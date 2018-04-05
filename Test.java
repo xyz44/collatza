@@ -9,7 +9,7 @@ class Test {
         System.out.println(ini + " " + count + " " + maxel);
         System.out.println("===========================");
 
-        for(Integer elem : hailstone.getElements())
-            System.out.println(elem);
+//        for(Integer elem : hailstone.getElements())
+//            System.out.println(elem);
     }
 }
